@@ -1,59 +1,60 @@
-<html>
-    <title></title>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
-   body {
-    background-color: #f3e8ff;
-    font-family: 'Times New Roman', serif;
+    <style>
+        body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    padding: 20px;
-}
-
-p {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #5a4d41;
-    text-align: justify;
-    border: 2px solid #9370db;
-    margin: auto;
-}
-
-p::first-letter {
-    font-size: 30px;
-    font-weight: bold;
-    color: #800080;
-}
-
-p::before {
-    content: "Dear Camille,";
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
+    background-color: #f9e3e3;
+    font-family: 'Arial', sans-serif;
+    flex-direction: column;
+  }
+  
+  .container {
     text-align: center;
-    margin-bottom: 10px;
-    color: #4b0082;
-}
-
-p::after {
-    content: "\a\a \a - Julian";
-    white-space: pre;
-    display: block;
-    text-align: right;
-    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #d32f2f;
+  }
+  
+  .buttons {
     margin-top: 20px;
-    color: #4b0082;
-}
-
-@media (max-width: 600px) {
+  }
+  
+  .yes-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .no-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .gif_container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 600px) {
     body {
         padding: 10px;
     }
@@ -64,11 +65,23 @@ p::after {
         font-size: 16px;
     }
 }
-
-
-</style>
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    
 </head>
 <body>
-    <p>hi Meng, kamusta kana? i hope you're doing okay, i sent this letter kasi hindi ko kayang harapin ka sa personal at hindi rin kita kaya machat kaya dito nalang siguro. kung makuha ko man yung lakas ng loob na masend ko sayo to, ibigsabihin napaka tapang kong nilalang, haha. i really miss you, walang oras na hindi ka umalis sa isipan ko, tinry ko idistract yung sarili ko sa mga bagay bagay pero di ko talaga kayang magkunwari na ayos lang ako. i miss you, i miss our memories together and palaging ikaw ang nasa isipan ko araw-araw. ayokong sirain yung peace mo ngayon at ayoko rin macross yung line between satin, ayokong i-pressure ka pero ayoko rin kimkimin lahat ng to. I love you, i still see us as something worth holding onto. if you still feel the same way, please, magusap tayo. naguguluhan ka at naguguluhan rin ako, kaya let's figure things out together. if may kakapiranggot man na chance na sumubok tayo uli, hinding hindi ko na palalampasin. if kelangan mo ng oras, syempre nirerespeto ko yun. just let me know nalang. take care, my love.</p>
+    <div class="container">
+        <h1>Will you be my Valentine?</h1>
+        <div class="buttons">
+            <button class="yes-button">Yes</button>
+            <button class="no-button">No</button>
+        </div>
+        <div class="gif_container">
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute GIF">
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
