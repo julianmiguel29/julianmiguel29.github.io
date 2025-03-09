@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Iansui&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+  --dark-color: #000;
+}
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: var(--dark-color);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow: hidden;
+            perspective: 1000px;
+        }
+
+        .night {
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    filter: blur(0.1vmin);
+    z-index: -1;
+    background-image: radial-gradient(ellipse at top, transparent 0%, rgba(0, 0, 0, 0.7)), 
+                      radial-gradient(ellipse at bottom, rgba(0, 0, 0, 0.7), rgba(140, 0, 255, 0.507)), 
+                      repeating-linear-gradient(220deg, black 0px, black 19px, transparent 19px, transparent 22px), 
+                      repeating-linear-gradient(189deg, black 0px, black 19px, transparent 19px, transparent 22px), 
+                      repeating-linear-gradient(148deg, black 0px, black 19px, transparent 19px, transparent 22px), 
+                      linear-gradient(90deg, #8400ff, #f0f0f0);
+}
+
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-family: 'Iansui', serif;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background-color: white;
+            color: #800080;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: 'Iansui', serif;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        button:hover {
+            background-color: #d8b6ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="night"></div>
+    <h1>Happy Women's Day, my love.</h1>
+    <button onclick="redirectToIndex()">Click here</button>
+
+    <script>
+        function redirectToIndex() {
+            window.location.href = "flower.html";
+        }
+    </script>
+
+</body>
+</html>
